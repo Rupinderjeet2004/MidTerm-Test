@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using COMP2084MidtermW20.Data;
 using COMP2084MidtermW20.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace COMP2084MidtermW20.Controllers
 {
-
+    [Authorize]
     public class PartiesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,12 +21,14 @@ namespace COMP2084MidtermW20.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         // GET: Parties
         public async Task<IActionResult> Index()
         {
             return View(await _context.Party.ToListAsync());
         }
 
+        [AllowAnonymous]
         // GET: Parties/Details/5
         public async Task<IActionResult> Details(int? id)
         {

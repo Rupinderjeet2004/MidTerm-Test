@@ -1,0 +1,54 @@
+﻿@model IEnumerable<COMP2084MidtermW20.Models.Election>
+
+@{
+    ViewData["Title"] = "Canadian Federal Elections";
+}
+
+<h1>Canadian Federal Elections</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Party)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Majority)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Party.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Majority)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ElectionId">Details</a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <!-- your links in here within paragraph or div tags -->
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@item.ElectionId">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ElectionId">Delete</a>
+                        </div>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

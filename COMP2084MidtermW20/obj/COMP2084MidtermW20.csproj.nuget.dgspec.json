@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karimizadeh\\source\\repos\\COMP2084MidtermW20\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj": {}
+    "C:\\Users\\Rupinderjeet\\Source\\Repos\\COMP2084MidtermW2020\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karimizadeh\\source\\repos\\COMP2084MidtermW20\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj": {
+    "C:\\Users\\Rupinderjeet\\Source\\Repos\\COMP2084MidtermW2020\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karimizadeh\\source\\repos\\COMP2084MidtermW20\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj",
+        "projectUniqueName": "C:\\Users\\Rupinderjeet\\Source\\Repos\\COMP2084MidtermW2020\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj",
         "projectName": "COMP2084MidtermW20",
-        "projectPath": "C:\\Users\\karimizadeh\\source\\repos\\COMP2084MidtermW20\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj",
-        "packagesPath": "C:\\Users\\karimizadeh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karimizadeh\\source\\repos\\COMP2084MidtermW20\\COMP2084MidtermW20\\obj\\",
+        "projectPath": "C:\\Users\\Rupinderjeet\\Source\\Repos\\COMP2084MidtermW2020\\COMP2084MidtermW20\\COMP2084MidtermW20.csproj",
+        "packagesPath": "C:\\Users\\Rupinderjeet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rupinderjeet\\Source\\Repos\\COMP2084MidtermW2020\\COMP2084MidtermW20\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\karimizadeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rupinderjeet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

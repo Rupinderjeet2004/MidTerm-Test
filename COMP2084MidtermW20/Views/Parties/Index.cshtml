@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<COMP2084MidtermW20.Models.Party>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Canadian Federal Parties";
 }
 
-<h1>Index</h1>
+<h1>Canadian Federal Parties</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -32,9 +32,15 @@
                     @Html.DisplayFor(modelItem => item.Logo)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.PartyId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.PartyId"> Details </a> |
-                    <a asp-action="Delete" asp-route-id="@item.PartyId"> Delete </a>
+                    <a asp-action="Details" asp-route-id="@item.PartyId"> Details </a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <!-- your links in here within paragraph or div tags -->
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@item.PartyId">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@item.PartyId"> Delete </a>
+                        </div>
+                    }
                 </td>
             </tr>
         }
